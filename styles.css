@@ -1,0 +1,5 @@
+/* Keep long DOIs and author lists from overflowing on phones */
+main ol li {
+  overflow-wrap: anywhere;
+  margin-bottom: 0.4em;
+}

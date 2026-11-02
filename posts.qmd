@@ -1,0 +1,10 @@
+---
+title: "Notes"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  date-format: "YYYY-MM-DD"
+toc: false
+---

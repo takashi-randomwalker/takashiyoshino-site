@@ -1,0 +1,37 @@
+project:
+  type: website
+  # Rebuild the publication list from ORCID before every render
+  pre-render: python3 scripts/orcid.py
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+
+lang: ja
+
+website:
+  title: "Takashi Yoshino"
+  site-url: https://takashiyoshino.random-walk.org
+  description: "Activities of a man of science, art, literature, and music"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Profile
+      - href: publications.qmd
+        text: Publications
+      - href: posts.qmd
+        text: Notes
+    right:
+      - icon: github
+        href: https://github.com/takashi-randomwalker
+        aria-label: GitHub
+  page-footer:
+    center: "© Takashi Yoshino"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    html-math-method: mathjax

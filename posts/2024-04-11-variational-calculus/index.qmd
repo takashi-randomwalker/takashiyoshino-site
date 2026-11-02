@@ -1,0 +1,134 @@
+---
+title: "Katachi-06: 変分法の導入"
+date: 2024-04-11
+categories: [形の科学, 講義ノート]
+---
+
+::: {.callout-note}
+試作用のサンプルです。WordPress の下書き（ID 7）を自動で変換しました。書きかけの部分（「ほげほげ」など）は元のままです。
+:::
+
+## アウトライン
+
+以下のような積分が極値を取るように関数 $x(t)$ を決めたい．
+
+$$
+I=\int_{t_1}^{t_2} F(t, x(t), x'(t)) dx
+$$
+
+ただし，境界条件は$x(t_1)=x_1$, $x(t_2)=x_2$であるとする．このとき，オイラーの微分方程式，
+
+$$
+\frac{d}{dt}\left(\frac{\partial F}{\partial x'}\right)- \frac{\partial F}{\partial x} =0
+$$
+
+を解いて，上記の境界条件をあてはめることで $x(t)$ は決定する．
+
+従属変数が2種類で積分が
+
+$$
+I=\int_{t_1}^{t_2} F(t, x(t), x'(t), y(t), y'(t)) dt
+$$
+
+と表される場合には，オイラーの微分方程式は，連立微分方程式となり，
+
+$$
+\left\{
+\begin{array}{c}
+\displaystyle \frac{d}{dt}\left(\frac{\partial F}{\partial x'}\right)- \frac{\partial F}{\partial x} =0 \\ 
+\displaystyle \frac{d}{dt}\left(\frac{\partial F}{\partial y'}\right)- \frac{\partial F}{\partial y} =0 
+\end{array}
+\right.
+$$
+
+を解く．
+
+従属変数が2種類で以下のような束縛条件がある場合，
+
+$$
+J=\int_{t_1}^{t_2} G(t, x(t), x'(t), y(t), y'(t)) dt=c\,\,\, (\mathrm{定数})
+$$
+
+ラグランジュの未定乗数 $\lambda$ を導入して，被積分関数を
+
+$$
+\tilde{F} = F-\lambda G
+$$
+
+と置き直して，束縛条件と以下の連立微分方程式を連立させて解き，ラグランジュの未定乗数を消去する．
+
+$$
+\left\{
+\begin{array}{c}
+\displaystyle \frac{d}{dt}\left(\frac{\partial \tilde{F}}{\partial x'}\right)- \frac{\partial \tilde{F}}{\partial x} =0 \\ 
+\displaystyle \frac{d}{dt}\left(\frac{\partial \tilde{F}}{\partial y'}\right)- \frac{\partial \tilde{F}}{\partial y} =0 
+\end{array}
+\right.
+$$
+
+## 簡単な例
+
+###  平面上の2点を結ぶ最短経路
+
+【問題】ほげほげ
+
+【補足】ほげほげ
+
+【解答】ほげほげ
+
+### 境界の長さが固定されているときに面積を最大にする図形
+
+【問題】束縛条件として $J=\int_{0}^{2} \sqrt{ 1+y'(x)^2} dx=2\pi$ のように曲線の長さが与えられているとき， $I=\int_{0}^{2} y dx$ を最大にする関数$y=y(x)$を求めなさい．ただし，$y\ge 0$ とし， $y(0)=0$ および  $y(2)=0$ とする．
+
+【補足】これは長さ$2\pi$のひもの端をふたつの点 (0, 0) と (2, 0) に固定して形を変えることを示している．$y$ に負の領域（$y<0$な領域）は積分の値を少なくさせてしまう．従って $y\ge0$ に限定して問題ない．問題は，ひもの形を変えたときに積分値（ひもと$x$軸で囲まれた部分の面積と考えて良い）が極値をもつ場合の $y=y(x)$ の式の形を求めたい．
+
+【解答】
+
+## 解説
+
+### 曲線の長さのもとめかた
+
+最も簡単な例として，以下の積分を考えよう．2次元直交座標系にある点 $(x(t), y(t))$ が時刻 $t=t_1$ から時刻 $t=t_2$ までなめらかに変化するときの軌跡の長さ $l$ は以下の式となる．
+
+$$
+l=\int_{t_1}^{t_2} \sqrt{x'(t)^2+y'(t)^2} dt
+$$
+
+ 微小な時間 $\Delta t$ の間の変化量を $\Delta x = x(t+\Delta t)-x(t)$ と $\Delta y = y(t+\Delta t)-y(t)$ とすると，移動距離は三平方の定理から， $\sqrt{\Delta x^2+\Delta y^2}$ となるので，時刻 $t=t_1$ から時刻 $t=t_2$ までを $\Delta t$ ずつ微小に分割してその距離の和を取ると，
+
+$$
+\displaystyle \sum_i \sqrt{\Delta x_i^2+\Delta y_i^2} =\sum_i \sqrt{(x(t_i+\Delta t)-x(t_i))^2+(y(t_i+\Delta t)-y(t_i))^2}\\= \sum_i \sqrt{(x'(t_i)\Delta t)^2+(y'(t_i)\Delta t)^2}\\
+= \sum_i \sqrt{(x'(t_i))^2+(y'(t_i))^2}\Delta t
+$$
+
+となるので， $\Delta t\to 0$ の極限を取ると $l$ の式が得られる．一方でパラメータを使わずに独立変数として$x$を用いると，$l$ の式は，
+
+$$
+l=\int_{x_1}^{x_2} \sqrt{1^2+y'(x)^2} dx
+$$
+
+### 1変数の場合
+
+多くの場合，変分法でやりたいことは与えられた条件を満たす最適な関数の形を見つけることだ．条件は以下の積分が極値を持つことだ．
+
+$$
+I=\int_{x_1}^{x_2} F(x, y(x), y'(x)) dx
+$$
+
+すなわち，被積分関数が $x$， $y(x)$，$y'(x)$を組合せて出来上がる式を積分した結果が極値をもつ場合を考える．
+
+$$
+F(x, y(x))=c
+$$
+
+という形で関係が関数の中から
+
+個人の意見だが変分原理は面白い．多くの人が本を書いた理由がよくわかる．
+
+## 参考文献
+
+小野寺
+
+## アップデートの記録
+
+2024/04/25 初版

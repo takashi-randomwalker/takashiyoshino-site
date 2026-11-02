@@ -1,0 +1,9 @@
+---
+title: "Publications"
+---
+
+この一覧は [ORCID](https://orcid.org/0000-0003-1756-0162) から自動で作っています。
+This list is generated automatically from ORCID.
+講演・著書なども含む業績の全体は [researchmap](https://researchmap.jp/takashiyoshino) をご覧ください。
+
+{{< include _publications.md >}}
