@@ -6,6 +6,7 @@ and pages, which are often missing on ORCID. If the network fails, the
 existing _publications.md is kept so the site still builds.
 """
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -134,6 +135,11 @@ def entry(work):
 
 
 def main():
+    # Quarto sets this only when the whole project is rendered; skip the
+    # network round trip on preview and single-page renders
+    if not os.environ.get("QUARTO_PROJECT_RENDER_ALL") and OUT.exists():
+        print(f"orcid: partial render, keeping the existing {OUT.name}", file=sys.stderr)
+        return
     try:
         entries = [entry(w) for w in orcid_works()]
     except Exception as e:
