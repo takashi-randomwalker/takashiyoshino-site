@@ -1,6 +1,6 @@
 ---
 title: "Takashi Yoshino"
-subtitle: "（ここに漢字の氏名）"
+subtitle: "吉野 隆"
 toc: false
 about:
   template: jolla
@@ -23,7 +23,7 @@ about:
 
 東洋大学 理工学部 機械工学科 教授。
 
-形の科学（Science on Form）を研究しています。放散虫の骨格の幾何学、折り紙、てまり、球面上のパターン形成、高次元の幾何学などを扱っています。
+形の科学（Science of Form）を研究しています。高次元の幾何学、折り紙、てまり、球面上のパターン形成、タイリング、放散虫の骨格の幾何学などを扱っています。
 
 Professor, Department of Mechanical Engineering, Toyo University.
-My research interests are in the science on form: the geometry of radiolarian skeletons, origami, temari, pattern formation on spheres, and higher-dimensional geometry.
+My research interests are in the science of form: higher-dimensional geometry, origami, temari, pattern formation on spheres, tilings, and the geometry of radiolarian skeletons.
