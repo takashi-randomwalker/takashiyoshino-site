@@ -1,0 +1,11 @@
+---
+title: "Lectures"
+listing:
+  contents: "*/index.qmd"
+  sort: "title"
+  type: default
+  fields: [title, description]
+toc: false
+# Remove when the first course is ready to publish
+draft: true
+---

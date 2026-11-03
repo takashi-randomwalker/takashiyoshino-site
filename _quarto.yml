@@ -5,6 +5,7 @@ project:
   render:
     - "*.qmd"
     - "posts/**/*.qmd"
+    - "lectures/**/*.qmd"
 
 lang: ja
 
@@ -20,10 +21,19 @@ website:
         text: Publications
       - href: posts.qmd
         text: Notes
+      # Uncomment when lectures/index.qmd is no longer a draft
+      # - href: lectures/index.qmd
+      #   text: Lectures
     right:
       - icon: github
         href: https://github.com/takashi-randomwalker
         aria-label: GitHub
+  # One sidebar per course: table of contents for all its lectures
+  sidebar:
+    - id: katachi
+      title: "形の科学特論"
+      contents: lectures/katachi
+  page-navigation: true
   page-footer:
     center: "© Takashi Yoshino"
 

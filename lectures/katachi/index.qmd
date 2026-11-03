@@ -1,0 +1,14 @@
+---
+title: "形の科学特論"
+description: "講義ノート（全15回）"
+listing:
+  contents: "*/index.qmd"
+  sort: "filename"
+  type: table
+  fields: [title]
+  sort-ui: false
+  filter-ui: false
+toc: false
+# Remove when the first lecture is ready to publish
+draft: true
+---
