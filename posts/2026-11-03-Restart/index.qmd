@@ -1,0 +1,15 @@
+---
+title: "再スタート（Restart）"
+date: 2026-11-03
+categories: [Announce]
+draft: true
+---
+
+::: {.callout-note}
+Let me restart my website. Webサイトを再スタートします．
+:::
+
+## 再スタート
+
+I have restarted my website. I will continue to write about my research and lectures on this site. 
+
