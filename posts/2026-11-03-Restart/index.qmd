@@ -2,7 +2,7 @@
 title: "再スタート（Restart）"
 date: 2026-11-03
 categories: [Announce]
-draft: true
+draft: false
 ---
 
 ::: {.callout-note}
