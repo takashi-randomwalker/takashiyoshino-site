@@ -1,5 +1,5 @@
 ---
-title: "Lectures"
+title: "講義ノート (Lectures)"
 listing:
   contents: "*/index.qmd"
   sort: "title"
@@ -9,3 +9,9 @@ toc: false
 # Remove when the first course is ready to publish
 draft: true
 ---
+
+## 講義ノート
+
+- [形の科学特論（Science of Form）](lectures/ScienceOfForm/index.qmd)  
+  高次元の幾何学，折り紙，てまり，球面上のパターン形成，タイリング，放散虫の骨格の幾何学などについてのイントロダクションを扱います．
+ 
