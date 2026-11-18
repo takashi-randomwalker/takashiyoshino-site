@@ -10,7 +10,7 @@ listing:
   filter-ui: false
 toc: false
 # Remove when the first lecture is ready to publish
-draft: true
+draft: false
 ---
 
 - 第01回: [次元とは](lectures/ScienceOfForm/01-WhatIsADimension/index.qmd)  （準備中）

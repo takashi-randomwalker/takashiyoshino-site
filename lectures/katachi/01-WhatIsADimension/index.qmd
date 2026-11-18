@@ -2,7 +2,7 @@
 title: "Katachi-01: 次元とは何か"
 date: 2026-11-09
 categories: [形の科学, 講義ノート]
-draft: true
+draft: false
 ---
 
 ::: {.callout-note}
