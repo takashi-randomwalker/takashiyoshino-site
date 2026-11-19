@@ -7,7 +7,7 @@ listing:
   fields: [title, description]
 toc: false
 # Remove when the first course is ready to publish
-draft: true
+draft: false
 ---
 
 ## 講義ノート

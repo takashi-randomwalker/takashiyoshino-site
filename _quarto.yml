@@ -22,8 +22,8 @@ website:
       - href: posts.qmd
         text: Notes
       # Uncomment when lectures/index.qmd is no longer a draft
-      # - href: lectures/index.qmd
-      #   text: Lectures
+      - href: lectures/index.qmd
+        text: Lectures
     right:
       - icon: github
         href: https://github.com/takashi-randomwalker

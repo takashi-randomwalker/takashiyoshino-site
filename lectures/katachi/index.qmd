@@ -13,9 +13,9 @@ toc: false
 draft: false
 ---
 
-- 第01回: [次元とは](lectures/ScienceOfForm/01-WhatIsADimension/index.qmd)  （準備中）
-- 第02回: [フラクタル](lectures/ScienceOfForm/02-Fractals/index.qmd)  （準備中）
-- 第03回: [多面体幾何学](lectures/ScienceOfForm/03-PolyhedronGeometry/index.qmd)  （準備中）
-- 第06回： [変分法](lectures/ScienceOfForm/06-fVariational/index.qmd)  （準備中）
-- 第07回： [高次元の幾何学・物理学](lectures/ScienceOfForm/07-HighDimensionalGeometry/index.qmd)  （準備中）
+- 第01回: [次元とは](01-WhatIsADimension/index.qmd)  （準備中）
+- 第02回: [フラクタル](02-Fractals/index.qmd)  （準備中）
+- 第03回: [多面体幾何学](03-PolyhedronGeometry/index.qmd)  （準備中）
+- 第06回： [変分法](06-fVariational/index.qmd)  （準備中）
+- 第07回： [高次元の幾何学・物理学](07-HighDimensionalGeometry/index.qmd)  （準備中）
 
