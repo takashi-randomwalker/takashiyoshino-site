@@ -2,7 +2,7 @@
 title: "Katachi-06: 変分法の導入"
 date: 2024-04-11
 categories: [形の科学, 講義ノート]
-draft: true
+draft: false
 ---
 
 ::: {.callout-note}
