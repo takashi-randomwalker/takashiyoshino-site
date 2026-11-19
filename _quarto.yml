@@ -21,7 +21,6 @@ website:
         text: Publications
       - href: posts.qmd
         text: Notes
-      # Uncomment when lectures/index.qmd is no longer a draft
       - href: lectures/index.qmd
         text: Lectures
     right:
